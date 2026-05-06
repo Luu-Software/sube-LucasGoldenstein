@@ -9,5 +9,17 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 */
 
 boton.addEventListener("click", () => {
-  // COMPLETAR
+let suberegistrada = registrada.value;
+let kilometros = distancia.value;
+
+if (kilometros <= 3){
+if (suberegistrada === true){
+tarifa.innerText = "$ 715.24";
+}
+else {
+  tarifa.innerText = "$ 1137.23"; 
+}	  
+
+
+}
 });
