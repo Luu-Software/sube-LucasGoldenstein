@@ -8,18 +8,30 @@ Distancia	  | Con SUBE registrada   | Con SUBE sin registrar
 12-27 km	  | $ 917.24		          | $ 1458.41
 */
 
+
+
 boton.addEventListener("click", () => {
-let suberegistrada = registrada.value;
-let kilometros = distancia.value;
+  let suberegistrada = registrada.value;
+  let kilometros = distancia.value;
+  let precio
+  
+  if (suberegistrada = "si"){
+    if (kilometros <= 3){
+      precio = "$ 715.24";
+    }
+    else if (kilometros <= 6){
+      precio = "$ 794.74";
+    }
 
-if (kilometros <= 3){
-if (suberegistrada === true){
-tarifa.innerText = "$ 715.24";
-}
-else {
-  tarifa.innerText = "$ 1137.23"; 
-}	  
+    else if (kilometros <= 12){
+      precio = "$ 855.97";
+    }
 
+    else if (kilometros <= 12){
+      precio = "$ 917.24	";
+    }
+  }
+  
+  tarifa.innerText = precio;
+  });
 
-}
-});
