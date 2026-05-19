@@ -18,7 +18,7 @@ boton.addEventListener("click", () => {
   
   
   
-if (colectivo === ciudad){
+if (colectivo === "ciudad"){
   if (suberegistrada === "si"){
     if (kilometros <= 3){
       precio = "$ 753,74";
@@ -76,7 +76,7 @@ if (colectivo === ciudad){
   }}
 
 
-  if (colectivo === provincia){
+  if (colectivo === "provincia"){
     if (suberegistrada === "si"){
       if (kilometros <= 3){
         precio = "$ 968,57";
@@ -142,7 +142,7 @@ if (colectivo === ciudad){
     }}
 
 
-    if (colectivo === nacional){
+    if (colectivo === "nacional"){
       if (suberegistrada === "si"){
         if (kilometros <= 3){
           precio = "$ 700,00";
