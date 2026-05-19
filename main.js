@@ -34,6 +34,9 @@ if (colectivo === "ciudad"){
     else if (kilometros <= 27){
       precio = "$ 966,61";
     }
+    else {
+      precio = "La distancia ingresada es demasiado alta.";
+    }
   }
   
 
@@ -54,7 +57,7 @@ if (colectivo === "ciudad"){
     }
 
     else if (kilometros > 27){
-      precio = "¡La cantidad de kilometros ingresados supera el limite!";
+      precio = "La distancia ingresada es demasiado alta.";
     }
   }
 
